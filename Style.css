@@ -1,0 +1,51 @@
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+:root {
+    --primary-teal: #a8d5ce;
+    --footer-navy: #4b4f69;
+    --btn-peach: #e59a80;
+    --bg-light: #fdfcf8;
+    --box-desc: #f5eedc;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Footer */
+.header-custom { background-color: var(--primary-teal); }
+.footer-custom { background-color: var(--footer-navy); color: white; padding: 20px 0; margin-top: auto; }
+.footer-custom a { color: white; text-decoration: none; margin: 0 15px; font-size: 0.9rem; }
+
+/* Sidebar */
+.sidebar { background-color: var(--primary-teal); padding: 20px; height: 100%; min-height: 600px;}
+.sidebar-box { background-color: white; padding: 15px; margin-bottom: 20px; }
+.filter-title { font-weight: bold; font-size: 0.9rem; margin-bottom: 5px; margin-top: 10px; }
+.form-check-label { font-size: 0.85rem; }
+
+/* Buttons */
+.btn-peach { background-color: var(--btn-peach); color: black; font-weight: bold; border-radius: 0; border: none; width: 100%; padding: 5px; }
+.btn-peach:hover { background-color: #d1876e; color: white; }
+
+/* Specific Elements */
+.hero-banner { 
+    background-color: #c4bca2; /* Placeholder untuk gambar hero */
+    color: white; 
+    padding: 40px 20px; 
+    margin-bottom: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.hero-banner h2 { font-weight: bold; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); }
+.product-card { text-align: center; margin-bottom: 20px; }
+.product-card img { width: 100%; height: 120px; object-fit: cover; margin-bottom: 10px; background-color: white;}
+.desc-box { background-color: var(--box-desc); padding: 30px; height: 100%; min-height: 250px; display: flex; align-items: center; justify-content: center; }
