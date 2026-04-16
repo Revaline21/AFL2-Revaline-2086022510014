@@ -36,16 +36,41 @@ body {
 .btn-peach:hover { background-color: #d1876e; color: white; }
 
 /* Specific Elements */
-.hero-banner { 
-    background-color: #c4bca2; /* Placeholder untuk gambar hero */
-    color: white; 
-    padding: 40px 20px; 
-    margin-bottom: 20px;
-    height: 200px;
-    display: flex;
-    align-items: center;
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
 }
-.hero-banner h2 { font-weight: bold; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); }
-.product-card { text-align: center; margin-bottom: 20px; }
-.product-card img { width: 100%; height: 120px; object-fit: cover; margin-bottom: 10px; background-color: white;}
-.desc-box { background-color: var(--box-desc); padding: 30px; height: 100%; min-height: 250px; display: flex; align-items: center; justify-content: center; }
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;   /* atur tinggi biar konsisten */
+    object-fit: cover; /* biar tidak gepeng */
+    border-radius: 8px;
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
